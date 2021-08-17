@@ -1,0 +1,88 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  	<welcome-file-list>
+		<welcome-file>Welcome.html</welcome-file>
+	</welcome-file-list>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<display-name>RegisterServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.ibaw.controller.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.ibaw.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CustomerOperationsServlet</servlet-name>
+  	<display-name>CustomerOperationsServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.ibaw.controller.CustomerOperationsServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EmployeeOperationsServlet</servlet-name>
+  	<display-name>EmployeeOperationsServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.ibaw.controller.EmployeeOperationsServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ErrorHandlerController</servlet-name>
+  	<display-name>ErrorHandlerController</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.ibaw.controller.exceptions.ErrorHandlerController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CustomerOperationsServlet</servlet-name>
+  	<url-pattern>/CustomerOperationsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EmployeeOperationsServlet</servlet-name>
+  	<url-pattern>/EmployeeOperationsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ErrorHandlerController</servlet-name>
+  	<url-pattern>/ErrorHandlerController</url-pattern>
+  </servlet-mapping>
+  	<error-page>
+		<error-code>404</error-code>
+		<location>/ErrorHandlerController</location>
+	</error-page>
+
+<error-page>
+		<error-code>405</error-code>
+		<location>/ErrorHandlerController</location>
+	</error-page>
+	<error-page>
+		<exception-type>java.lang.IllegalArgumentException</exception-type>
+		<location>/ErrorHandlerController</location>
+	</error-page>
+	
+	<error-page>
+		<exception-type>javax.servlet.ServletException</exception-type>
+		<location>/ErrorHandlerController</location>
+	</error-page>
+
+<error-page>
+		<exception-type>java.lang.NumberFormatException</exception-type>
+		<location>/ErrorHandlerController</location>
+	</error-page>
+	
+	<error-page>
+		<exception-type>java.lang.NullPointerException</exception-type>
+		<location>/ErrorHandlerController</location>
+	</error-page>
+</web-app>

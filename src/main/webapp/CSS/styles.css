@@ -1,0 +1,37 @@
+@charset "ISO-8859-1";
+	
+
+.submit{
+	margin-left:100px;
+	width:100px;
+	height:50px;
+	background-color:#c4a066 ;
+	border-radius:15px;
+}
+
+.reset{
+	float:left;
+	margin-left: 150px
+}
+.registerFrom{
+	
+	border:5px solid black;
+	height:730px;
+	text-align:center;
+	background-color: #c4d9d3;
+	font-family: helvetika;
+}
+.registerTable{
+	margin:-120px 420px;
+}
+h6{
+	color:red;
+}
+.login{
+	float:left;
+	margin-left: -500px;
+	margin-top: -500px;
+	color:red;
+}
+
+
