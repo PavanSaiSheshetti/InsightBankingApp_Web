@@ -1,10 +1,23 @@
 # InsightBankingApp_Web
 
 
-## Overview:
+## Project Description
 
 This is a simple Banking Operations Project(Web Application) where customers can create their bank account, check their balance, Deosit, Withdraw money and Transfer money to other valid accounts.
 Bank Employee can approve or reject accounts, can view the all customer details also can see the log information.
+
+## Technologies Used
+
+<ul>
+  <li>Java
+  <li>PostgreSQL
+  <li>JDBC
+  <li>Hibernate
+  <li>HTML
+  <li>JavaScript
+  <li>CSS
+  <li>JSP
+</ul>
 
 ## Technical Aspect:
 <ul>
@@ -19,13 +32,13 @@ Bank Employee can approve or reject accounts, can view the all customer details 
 <li>Implemented Logging by Log4j
 </ul>
 
-## Working Procedure of model:
+## Getting Started
 
 After Running this project in eclipse, it will run on a localhost with homepage. where Customer can register for an account in the bank(a unique account number and cif Id will be generated for each customer), can login after employee approved the bank account.
 In the customer dashboard customer can view, deposit, withdraw and also transfer money . All the client side and server side validations were done using JavaScript and Servlet. System will
 show the error messages for invalid transactions. Employee can login and view all bank accouunt details also the log information.
 
-## Installation and Run:
+## Usage
 
 Import this project by a Github Desktop(click [here](https://desktop.github.com/) to install) or by downloading the Zip file . If you downloaded the zip file then you need to unzip or extract it and import this in eclipse(file-->import-->select the project)
 change the database configuration in hibernate.cfg file (Driver,Dialect,username and password).That's all you can run this project and see the results.
@@ -40,8 +53,6 @@ change the database configuration in hibernate.cfg file (Driver,Dialect,username
 If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/PavanSaiSheshetti/InsightBankingApp_Web/issues/new) by including your search query and the expected result.
 
 
-## Technologies Used:
 
-Java, PostgreSQL, JDBC, Hibernate, HTML, JavaScript, CSS, JSP
 
 
